@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Input demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+    </head>
+<body>
+    <header>
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+           <a class="navbar-brand" href="#">link1</a>
+           <a class="navbar-brand" href="#">link1</a>
+           <a class="navbar-brand" href="#">link1</a>
+       </nav>
+    </header>
+        <main class="container">
+            <form novalidate class="narrow">
+                <h2 class="h3">Search</h2>
+                <input type="search"
+                id="search-text"
+                class="form-control"
+                placeholder="Search"
+                autofocus />
+               
+            </form> 
+            <div class="col-xs-6">
+                    <h4>Contact Info</h4>
+                    <input type="text"
+                    id="first-last"
+                    placeholder="first and last name" 
+                    required
+                    pattern="(.*)\s(.*)"
+                    class="form-control" />
+
+                    <div class="invalid">Name must be sperated by a space</div>
+
+                    <input id="email-text"
+                    type="email"
+                    required
+                    placeholder="email address"
+                    class="form-control"/>
+
+                    <div class="invalid">Must input a valid e-mail</div>
+
+                    <input type="tel"
+                    id="phone-text"
+                    placeholder="telephone number"
+                    required
+                    class="form-control"/>
+                    <div class="invalid">Must input a valid phone number</div>
+
+                    <input type="url"
+                    id="url-text"
+                    required
+                    placeholder="url"
+                    class="form-control"/>
+            </div>
+            <div class="col-xs-6">
+                
+                        <h2 class="h3">Preferences</h2>
+                        <input type="number"
+                        placeholder="How many bedrooms"
+                        min="1"
+                        max="6"
+                        required
+                        class="form-control"/>
+                
+                
+                
+                    <h3 class="h4">Days until available to move</h3>
+                    <div class="col-sm-6">
+                            <input type="range"
+                            required
+                            min="0" max="120" step="10" value="30"
+                            class=""form-control
+                            id="move-range"/>
+                    </div>
+                
+                    <div class="col-sm-4">
+                        <span id="move-value">30</span>
+                    </div>
+                
+            </div>
+            <div class="col-xs-6">
+                <input type = "text"
+                id="direction-list"
+                list="direction-data"
+                placeholder="Directional Preference"
+                class="form-control"/>
+                <datalist id="direction-data">
+                    <option value="North"></option>
+                    <option value="South"></option>
+                    <option value="East"></option>
+                    <option value="West"></option>
+                </datalist>
+
+                <input type="color"
+                id="main-color"
+                class="form-control"/>
+                    
+            
+                <h1>Available Date</h1>
+                <input type="month"
+                class="form-control"
+                value="2018-08"/>
+
+                <input type="week"
+                class="form-control"
+                value="2018-w26"/>
+
+                <input type="datetime-local"
+                class="form-control"
+                value="2018-08-26T10:30:00"/>
+
+                <div class="push-down-top">
+                    <button class="btn btn-link">Cancel</button>
+                    <input type="submit" class="btn btn-default" value="Save"/>
+                </div>
+            </div>
+                
+                
+        </main>
+        <footer  class="navbar navbar-inverse navbar-fixed-bottom">
+                <p>Created by: Jason Doucette</p>
+                <p>Contact information: <a href="mailto:jasonedou@gmail.com">
+                jasonedou@gmail.com</a>.</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/inputsController.js"></script>
+</body>
+</html>

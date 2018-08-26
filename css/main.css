@@ -4,10 +4,14 @@
    Author's custom styles
    ========================================================================== */
 
-
-
+main.container{
+    margin:auto;
+    -webkit-box-shadow: 0 0 6px #999;
+    -moz-box-shadow: 0 0 6px #999;
+        box-shadow: 0 0 6px #999;
+}
 .bgImage {
-    background-image: url("../img/zoa.png");
+    background-image: url("../img/mainpic.png");
     background-size: cover; 
 }
 
@@ -18,7 +22,70 @@
     color:rgb(222, 151, 255);
 }
 
+footer p{
+    color:#888;
+}
 
+input:required{
+    border-left: 4px solid #c33;
+}
+
+input:valid + .invalid{
+    visibility:hidden;
+}
+
+.invalid {
+    color:#999;
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid{
+
+    color: #c33;
+    border-color: #c33;
+    
+}
+
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus{
+
+    border-color: #c33;
+    -webkit-box-shadow: 0 0 6px #fcc;
+        -moz-box-shadow: 0 0 6px #fcc;
+            box-shadow: 0 0 6px #fcc;
+    
+}
+
+.itemHolder{
+    
+    padding: 5px;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 6px #999;
+        -moz-box-shadow: 0 0 6px #999;
+            box-shadow: 0 0 6px #999;
+}
+.loadingBin{
+    margin:auto;
+}
+img{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+}
+img.detail{
+    width: auto;
+    height: 600px;
+    object-fit: contain;
+}
+.row p{
+    width: 400px;
+}
+/*[data-role="page"] {
+    /* Styles */
+/*  }
 
 
 
