@@ -24,15 +24,19 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top"></nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <a href="index.html"class="navbar-brand">Home</a>
+        </nav>
     </header>
 
     
         <main class="container">
+
+                <h1 class="h2" >Dynamic Gallery Loading</h1>
                 <input type = "text"
                 id="dataPicker"
                 list="choice-data"
-                placeholder="Dynamic Load Data (JSON)"
+                placeholder="Dynamic Load Data (JSON)... Pick another DataSet"
                 class="form-control"/>
                 <datalist id="choice-data">
                     <option value="Corals"></option>
@@ -41,6 +45,35 @@
             <section class="loadingBin">
                 <h4 class="h3" id="dynamicTitle">Pick a Dataset to load</h4>
                
+                <div class="itemHolder itemHolderMain">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <h3 class="h2">Corals</h3>
+                                        </div>
+                                        <div class="row">
+                                        <img src="img/coral/bonsai.jpg"  alt="Responsive image"/>
+                                        </div>
+                                        <div class="row"> 
+                                                <p></p>
+                                            </div>
+                                        
+                                    </div>
+                        </div>
+
+                        <div class="itemHolder itemHolderMain">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <h3 class="h2">Watercolor Paintings</h3>
+                                    </div>
+                                    <div class="row">
+                                    <img src="img/paintings/painting3.jpg"  alt="Responsive image"/>
+                                    </div>
+                                    <div class="row"> 
+                                            <p></p>
+                                        </div>
+                                    
+                                </div>
+                    </div>
                 
             </section>
         </main>
@@ -49,11 +82,16 @@
         <br>
        
 
-    <footer  class="navbar navbar-inverse navbar-fixed-bottom">
-            <p>Created by: Jason Doucette</p>
-            <p>Contact information: <a href="mailto:jasonedou@gmail.com">
-            jasonedou@gmail.com</a>.</p>
-    </footer>
+        <footer  class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+                <div class="container">
+                  <div class="navbar-header">
+                      <p  class="navbar-brand">&copy; Jason Doucette 2018</p>
+                      <a href="mailto:jasonedou@gmail.com" class="navbar-brand">
+                        e:mail jasonedou@gmail.com</a>
+                  </div>
+                
+                </div>
+            </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>

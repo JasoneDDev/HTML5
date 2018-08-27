@@ -67,6 +67,11 @@ select:focus:invalid:focus{
         -moz-box-shadow: 0 0 6px #999;
             box-shadow: 0 0 6px #999;
 }
+.itemHolder:hover{
+    -webkit-box-shadow: 0 0 6px blue;
+    -moz-box-shadow: 0 0 6px blue;
+        box-shadow: 0 0 6px blue;
+}
 .loadingBin{
     margin:auto;
 }

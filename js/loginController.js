@@ -50,4 +50,5 @@ $(document).ready( function(e){
     });
 
     $('#login-button').on('click', validate);
+    validate();
 });
