@@ -85,7 +85,7 @@ img.detail{
     height: 600px;
     object-fit: contain;
 }
-.row p{
+.row>p{
     width: 400px;
 }
 /*[data-role="page"] {
