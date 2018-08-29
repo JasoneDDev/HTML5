@@ -1,0 +1,88 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recipes - a demo in Typography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" type="text/css" media="screen" href="css/author.css" />
+    <script>
+        WebFontConfig= {
+            google: { families: [ 'Roboto Slab:700','Roboto:400, 400italic, 700italic,700']}
+        };
+        (function(){
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https:' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <!-- Needed for no JS availability-->
+    <noscript>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,400italic,700italic,700'
+            rel='stylesheet' type='text/css'>
+    </noscript>
+</head>
+<body>
+    <header class="nav top">
+       <h2 class="nav-color-text">Watercolors by Jason Doucette</h2>
+       <a class="nav-button-right" href="index.html">Home</a>
+              
+    </header>
+        <main>
+            <div class="mainColumn">
+                    <img src="img/paintings/painting6.jpg" alt="Responsive image" class="img portrait" />
+                    <p>Title of water color piece| 15x22 Arches Cold Pressed 300Lb</p>
+            </div>
+            <div class="rightColumn">
+                <article>
+                    <aside>
+                        <img src="img/me.png" alt="Responsive image"class="img"/>
+                        <p>Jason Doucette Pictured.</p>
+                    </aside>
+                    <h1>Watercolors</h1>
+                    <p>This is just a demo to show webfonts and a progressive loading technique so the
+                        text doesn't pop when the fonts finally load in on slow connections etc. Here we'll keep
+                        typing to see if the text will push the other elements lower making kind of like a magazine article type
+                        style to it.
+                    </p>
+                
+                </article>
+                <article>
+                        <aside class="left">
+                            <img src="img/paintings/painting3.jpg" alt="Responsive image"class="img"/>
+                            <p>On The Prowl 15x22 watercolor.</p>
+                        </aside>
+                        <p>This is just a demo to show webfonts and a progressive loading technique so the
+                            text doesn't pop when the fonts finally load in on slow connections etc.
+                        </p>
+                    
+                </article>
+                <article>
+                        <aside>
+                            <img src="img/paintings/painting8.jpg" alt="Responsive image"class="img"/>
+                        </aside>
+                        <h3>What's In A Style</h3>
+                        <p>This is just a demo to show webfonts and a progressive loading technique so the
+                            text doesn't pop when the fonts finally load in on slow connections etc. Here we'll keep
+                            typing to see if the text will push the other elements lower making kind of like a magazine article type
+                            style to it.
+                        </p>
+                    
+                    </article>
+            </div>
+
+        </main>
+    <footer class="nav bottom">
+
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+
+</html>

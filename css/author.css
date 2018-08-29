@@ -1,0 +1,93 @@
+.nav{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    background-color: rgb(255, 179, 65);
+    left:0px;
+    
+}
+.nav.top{
+    z-index: 2px;
+    top:0px;
+}
+.nav.bottom{
+    z-index: 2px;
+    bottom:0px;
+}
+.nav-color-text{
+    color: rgb(217, 141,27);
+    margin-left: 2rem;
+    position: fixed;
+    width:500px;
+}
+
+.nav-button-right{
+    float:right;
+    margin: 1rem 3rem;
+    font-size: 3ch;
+}
+.nav-button-right:link{
+    color:#999;
+}
+main{
+    margin: 5rem 2rem;
+}
+
+h1{
+    
+    color: #444;
+}
+
+p{
+
+}
+article{
+    clear:right;
+    font-size: 1.8ch;
+}
+aside{
+   
+    float:right;
+    margin:0.5rem;
+    font-size: 10pt;
+    width: 7rem;
+}
+.left{
+    float:left;
+}
+aside>.img{
+    height: 5rem;
+    width: 7rem;
+    object-fit: cover;
+    -webkit-box-shadow: 0 0 6px #999;
+        -moz-box-shadow: 0 0 6px #999;
+            box-shadow: 0 0 6px #999;
+}
+.rightColumn{
+    float:right;
+    width:27%;
+    max-width: 16rem;
+    height:100%;
+}
+.mainColumn{
+    width:70%;
+    float:left;
+    margin:2rem 0.5rem;
+}
+
+.mainColumn>.img{
+    height: 25rem;
+    width: 100%;
+    object-fit: contain;
+    -webkit-box-shadow: 0 0 6px #999;
+        -moz-box-shadow: 0 0 6px #999;
+            box-shadow: 0 0 6px #999;
+
+    background-color: #eee;
+}
+
+
+.mainColumn>.img.portrait{
+    height: 36rem;
+    width: 100%;
+}
