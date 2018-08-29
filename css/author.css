@@ -67,6 +67,7 @@ aside>.img{
     float:right;
     width:27%;
     max-width: 16rem;
+    min-width:16rem;
     height:100%;
 }
 .mainColumn{
@@ -78,6 +79,7 @@ aside>.img{
 .mainColumn>.img{
     height: 25rem;
     width: 100%;
+    min-width: 23rem;
     object-fit: contain;
     -webkit-box-shadow: 0 0 6px #999;
         -moz-box-shadow: 0 0 6px #999;
