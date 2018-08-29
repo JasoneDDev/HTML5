@@ -25,13 +25,20 @@ h1{
 p{
 
 }
-
-.img{
-    width: 9rem;
-    height: 9rem;
-    object-fit: cover;
+article{
+    clear:right;
+}
+aside{
     float:right;
     margin:1rem;
+    font-size: 10pt;
+    width: 9rem;
+}
+.img{
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+    
     object-fit: cover;
     -webkit-box-shadow: 0 0 6px #999;
         -moz-box-shadow: 0 0 6px #999;
