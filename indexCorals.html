@@ -12,7 +12,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        
+
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/coralShop.css">
         <link rel="stylesheet" href="css/animate.css">
@@ -24,16 +24,40 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="head-fixed">
-            <a class="navbar-brand" href="shop.html">Shop</a>
+            <div class="centerNavLogo">
+                Logo
+              </div>
+              <a class="navbar-brand leftNav" href="shop.html">Shop</a>
+            <a class="navbar-brand leftNav" href="shop.html">Shipping</a>
+            <a class="navbar-brand leftNav" href="shop.html">ProTips</a>
+
+            <a class="navbar-brand rightNav h2" href="shop.html">Contact</a>
+            <a class="navbar-brand rightNav h2" href="shop.html">Services</a>
+            <a class="navbar-brand rightNav h2" href="shop.html">About</a>
             <div class="header-drop revealOnScroll" data-animation="slideInDown" data-timeout="400"></div>
         </header>
-        <div class="top-div">
-            <video poster="img/placeholderpic.png" class="coralVideo" autoplay loop>
-              <source src="img/coralBG.mp4" type="video/mp4">
+        <div class="videoClass">
+            <video poster="img/placeholderpic.png" class="coralVideo" autoplay loop muted>
+              <source src="img/reefStore.mp4" type="video/mp4">
               <!--<source src="movie.ogg" type="video/ogg">-->
               Your browser does not support the video tag.
             </video>
+        </div>
+        <div class="top-div">
+          <div class="searchContainer">
+            <p class="h1B">For All Your Reefing Needs.</p>
+            
+            <p class="h3">Fuel your addiction with a search</p>
+            <div class="inputWithIcon">
+                <input type="search"
+                id="search-text"
+                class="form-control"
+                placeholder="Search"
+                autofocus />
+                <i class="glyphicon glyphicon-search"></i>
+              </div>
           </div>
+        </div>
         <div class="center-div">
 
         </div>
