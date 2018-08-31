@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Lovelo'; /*a name to be used later*/
+    src: url('fonts/LoveloBlack.otf'); /*URL to font*/
+}
+body{
+
+    font-family: 'Lovelo';
+}
 .header-drop{
     width: 100%;
-    height: 9rem;
-    background-color: rgb(119, 0, 255);
+    height: 14rem;
+    background-color: rgb(223, 82, 0);
     z-index: -1;
     position: absolute;
     visibility: hidden;
@@ -13,16 +21,17 @@
     width: 100%;
     height: 8rem;
     position: fixed;
+    z-index: 1;
 }
 
 .centerNavLogo{
-    width: 4rem;
-    height:4rem;
+    width: 18rem;
+    height:14rem;
     left:50%;
-    margin-left: -2rem;
-    margin-top:2rem;
+    margin-left: -9rem;
     color: #fff;
     position: absolute;
+    text-align: center;
 }
 
 .top-div{
@@ -30,9 +39,10 @@
     height: 80rem;
     position: relative;
     color: #fff;
+    background-color: rgba(71, 80, 121, 0.308);
 }
 .searchContainer{
-    width:70rem;
+    width:70%;
     height:12rem;
     top:40%;
     margin: 0px auto;
@@ -49,25 +59,30 @@ p.h1B{
     margin-top:6rem;
     text-shadow: 0 0 4px black;
  }
-.videoClass{
+.videoClassTop{
     position:absolute;
     width:100%;
     height:80rem;
     z-index: -2;
 }
-.center-div{
+
+.second-div{
     width: 100%;
-    height: 140rem;
-    background-color: rgb(9, 69, 104);
+    height: 60rem;
+    background-color: rgb(5, 35, 53);
     position: relative;
 }
-
+.third-div{
+    width: 100%;
+    height: 100rem;
+    background-color: rgb(177, 178, 179);
+    position: relative;
+}
 .footer-block{
-
     width: 100%;
     height: 40rem;
     position: relative;
-    background-color: rgb(3, 36, 56);
+    background-color: rgba(3, 36, 56, 0.788);
 }
 
 .coralVideo{
@@ -78,12 +93,12 @@ p.h1B{
 
 .rightNav{
     float:right;
-    margin: 2rem 2rem;
+    margin: 4rem 3rem;
     color: #fff;
 }
 .leftNav{
     float:Left;
-    margin: 2rem 2rem;
+    margin: 4rem 3rem;
     color: #fff;
 }
 
@@ -92,7 +107,7 @@ p.h1B{
 }
 .inputWithIcon{
     margin:0px auto;
-    width: 50rem;
+    width: 50%;
     position:relative;
 }
 .inputWithIcon i{
@@ -100,5 +115,18 @@ p.h1B{
     left:0;
     padding:.8rem 1rem;
     color: #aaa;
+}
+
+img.logo{
+    width: 100%;
+    height: 12rem;
+    object-fit: contain;
+}
+
+.videoClassBottom{
+    position:absolute;
+    width:100%;
+    height:39rem;
+    z-index: -2;
 }
 
