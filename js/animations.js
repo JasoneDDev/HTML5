@@ -1,4 +1,9 @@
 $(document).ready( function(e){
+        $('.imagetray').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+        });
 
     var $window           = $(window),
         win_height_padded = $window.height() * 1.2,

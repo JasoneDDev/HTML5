@@ -215,6 +215,7 @@ p.whatsNew{
     padding:2rem;
     background-color: #555;
     text-align: center;
+    overflow: hidden;
 }
 .staffPicks{
     color:#fff;
@@ -224,4 +225,10 @@ p.whatsNew{
     padding:2rem;
     background-color: #555;
     text-align: center;
+}
+.imagetray{
+    width:90%;
+    height:100px;
+    margin:0 auto;
+    background-color: #967;
 }
