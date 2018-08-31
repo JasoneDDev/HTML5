@@ -83,14 +83,12 @@ p.h1B{
     height: 60rem;
     background-color: rgb(5, 35, 53);
     position: relative;
-    clear:both;
 }
 .third-div{
     width: 100%;
-    height: 100rem;
+    height: 80rem;
     background-color: rgb(177, 178, 179);
     position: relative;
-    clear:both;
     padding-top: 5rem;
 }
 .footer-block{
@@ -195,7 +193,7 @@ p.whatsNew{
 .mainBlock{
     color:#fff;
     height:60%;
-    width:80%;
+    width:90%;
     margin:5rem auto;
     padding:2rem;
     background-color: rgb(182, 174, 174);
@@ -209,30 +207,46 @@ p.whatsNew{
 }
 .latestArrivals{
     color:#fff;
-    height:20%;
-    width:90%;
+    height:35%;
+    width:95%;
     margin:2rem auto;
     padding:2rem;
     text-align: center;
-    overflow: hidden;
+
 }
 .staffPicks{
     color:#fff;
-    height:60%;
-    width:90%;
-    margin:2rem auto;
+    height:35%;
+    width:95%;
+    margin:0 auto;
     padding:2rem;
-    background-color: #555;
     text-align: center;
+    clear:both;
 }
 .imagetray{
-    width:90%;
-    height:100px;
+    width:95%;
+    height:130px;
     margin:0 auto;
 }
 .imagetray img{
     padding:1rem;
-    height:100px;
-    width:220px;
+    height:120px;
+    width:240px;
     object-fit: cover;
+}
+
+.glyphicon-fire{
+    color:rgb(218, 62, 0);
+    position:relative;
+    left:50px;
+    top:-35px;
+    font-size: 18pt;
+}
+
+.glyphicon-heart{
+    color:rgb(0, 235, 0);
+    position:relative;
+    left:50px;
+    top:-35px;
+    font-size: 18pt;
 }
