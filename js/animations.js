@@ -39,11 +39,19 @@ $(document).ready( function(e){
                 // instead of a settings object
             ]});
 
+    $(".revealOnLoad:not(.animated)").each(function () {
+            var $this     = $(this);;
+      
+            
+                $this.addClass('animated ' + $this.data('animation'));
+            
+          });        
     var $window           = $(window),
-        win_height_padded = $window.height() * 1.2,
+        win_height_padded = $window.height() * 0.9,
         isTouch           = Modernizr.touch;
 
     $window.on('scroll', revealOnScroll);
+
 
     function revealOnScroll() {
         var scrolled = $window.scrollTop();

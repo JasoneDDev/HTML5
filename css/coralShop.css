@@ -48,10 +48,16 @@ body{
 
 .top-div{
     width: 100%;
-    height: 80rem;
+    height: 70rem;
     position: relative;
     color: #fff;
     background-color: rgba(71, 80, 121, 0.363);
+}
+.videoClassTop{
+    position:absolute;
+    width:100%;
+    height:70rem;
+    z-index: -3;
 }
 .searchContainer{
     width:70%;
@@ -60,6 +66,10 @@ body{
     margin: 0px auto;
     position: relative;
     text-align: center;
+    visibility: hidden;
+}
+.searchContainer.animated{
+    visibility: visible;
 }
 p.h1B{
     font-size: 36pt;
@@ -68,15 +78,9 @@ p.h1B{
  }
  p.h3{
     width:100%;
-    margin-top:6rem;
     text-shadow: 0 0 4px black;
  }
-.videoClassTop{
-    position:absolute;
-    width:100%;
-    height:80rem;
-    z-index: -3;
-}
+
 
 .second-div{
     width: 100%;
@@ -86,10 +90,10 @@ p.h1B{
 }
 .third-div{
     width: 100%;
-    height: 60rem;
     background-color: rgb(177, 178, 179);
     position: relative;
     padding-top: 5rem;
+    min-height: 60rem;
 }
 .footer-block{
     width: 100%;
@@ -97,6 +101,7 @@ p.h1B{
     position: relative;
     color:#ddd;
     background-color: rgba(3, 36, 56, 0.788);
+    
 }
 
 .coralVideo{
@@ -183,24 +188,27 @@ p.whatsNew{
 .leftBlock{
     float:left;
     color:#fff;
-    height:60%;
+    height:80%;
     width:40%;
-    margin:5rem 1rem 0 5rem;
-    padding:2rem;
-    background-color: #555;
+    margin:0 2rem 0 0;
     text-align: left;
 }
 .mainBlock{
     color:#fff;
     height:60%;
     width:90%;
-    margin:5rem auto;
+    margin:5rem auto 0 auto;
     padding:2rem;
     background-color: rgb(182, 174, 174);
     text-align: left;
 }
 
 .rightBlock img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.leftBlock img{
     height:100%;
     width:100%;
     object-fit: cover;
