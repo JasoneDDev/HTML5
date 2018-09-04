@@ -1,10 +1,10 @@
-@font-face {
-    font-family: 'Lovelo'; /*a name to be used later*/
-    src: url('/fonts/LoveloBlack.otf'); /*URL to font*/
-}
+
+
+
 body{
     background-color: rgb(5, 35, 53);
-    font-family: 'Lovelo';
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
 }
 .header-drop{
     width: 100%;
@@ -47,11 +47,23 @@ body{
 }
 
 .top-div{
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
     width: 100%;
     height: 70rem;
     position: relative;
     color: #fff;
     background-color: rgba(71, 80, 121, 0.11);
+}
+@media screen and (max-width: 30em){ /* 420 ~ screen size / 16pt = em */
+    .top-div{
+        width: 100%;
+        height:40rem;
+        position: relative;
+        color: #fff;
+        background-color: rgba(71, 80, 121, 0.11);
+        display:block;
+    }
 }
 .videoClassTop{
     position:absolute;
@@ -59,7 +71,14 @@ body{
     height:70rem;
     z-index: -3;
 }
+@media screen and (max-width: 30em){ /* 420 ~ screen size / 16pt = em */
+    .videoClassTop{
+        display: none;
+    }
+}
 .searchContainer{
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
     width:70%;
     height:12rem;
     top:40%;
@@ -67,22 +86,69 @@ body{
     position: relative;
     text-align: center;
     visibility: hidden;
+    
 }
 .searchContainer.animated{
     visibility: visible;
 }
+h1{
+    font-family: 'Alegreya Sans SC';
+    font-weight: 900;
+}
 p.h1B{
+    font-family: 'Alegreya Sans SC';
+    font-weight: 900;
     font-size: 36pt;
     width:100%;
     text-shadow: 0 0 4px black;
  }
+ @media screen and (max-width: 30em){ /* 480 ~ screen size / 16pt = em */
+    p.h1B{
+        font-family: 'Alegreya Sans SC';
+    font-weight: 900;
+        font-size: 18pt;
+        width:100%;
+        text-shadow: 0 0 4px black;
+     }
+ }
+ @media screen and (max-width: 20em){ /* 320 ~ screen size / 16pt = em */
+    p.h1B{
+        font-family: 'Alegreya Sans SC';
+    font-weight: 900;
+        font-size: 16pt;
+        width:115%;
+        text-shadow: 0 0 4px black;
+     }
+ }
  p.h3{
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
     width:100%;
     text-shadow: 0 0 4px black;
  }
+ @media screen and (max-width: 30em){ /* 480 ~ screen size / 16pt = em */
+    p.h3{
+        font-family: 'Istok Web', sans-serif;
+        font-weight: 400;
+        font-size: 16pt;
+        width:100%;
+        text-shadow: 0 0 4px black;
+     }
+}
 
+@media screen and (max-width: 20em){ /* 320 ~ screen size / 16pt = em */
+    p.h3{
+        font-family: 'Istok Web', sans-serif;
+        font-weight: 400;
+        font-size: 8pt;
+        width:100%;
+        text-shadow: 0 0 4px black;
+     }
+}
 
 .second-div{
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
     width: 100%;
     background-color: rgb(5, 35, 53);
     position: relative;
@@ -111,14 +177,56 @@ p.h1B{
 }
 
 .rightNav{
+    font-family: 'Alegreya Sans SC';
+    font-weight: 900;
     float:right;
-    margin: 4rem 3rem;
+    margin: 4rem 1rem;
     color: #fff;
 }
 .leftNav{
+    font-family: 'Alegreya Sans SC';
+    font-weight: 900;
     float:Left;
-    margin: 4rem 3rem;
+    margin: 4rem 1rem;
     color: #fff;
+}
+.smallNav{
+    display:none;
+}
+
+@media screen and (max-width: 53em){ /* 850 ~ screen size / 16pt = em */
+    .rightNav{
+        display: none;
+    }
+    .leftNav{
+        display: none;
+    }
+    .smallNav{
+        display:block;
+        float:Left;
+        margin: 4rem 1rem;
+        color: #fff;
+    }
+    .myIcon{
+        font-size: 24px;
+    }
+    .smallNav a:link span{
+        color: #fff;
+    }
+    .smallNav a:visited span{
+        color: #fff;
+    }
+    .smallNav a:hover span{
+        color: rgb(0, 204, 255);
+    }
+    .smallNav a.dropdown-item{
+        float:left;
+        clear:both;
+        margin: 0 2rem;
+    }
+    .dropdown-menu{
+        min-width:100px;
+    }
 }
 
 .inputWithIcon input[type=search]{
@@ -148,6 +256,11 @@ img.logo{
     height:39rem;
     z-index: -2;
 }
+@media screen and (max-width:30em){
+    .videoClassBottom{
+        display:none;
+    }
+}
 .if_container{
     width:90%;
     margin: 0 auto;
@@ -175,6 +288,11 @@ p.whatsNew{
     -webkit-box-shadow: 0 4px 2px -2px gray;
     -moz-box-shadow: 0 4px 2px -2px gray;
         box-shadow: 0 4px 2px -2px gray;
+}
+@media screen and (max-width:30em){
+    p.whatsNew{
+        display:none;
+    }
 }
 .rightBlock{
     float:right;
